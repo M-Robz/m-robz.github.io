@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	text-shadow: 0 0 10px black;
+	background-color: black;
+}
+h1 {
+	margin: 40px 0 0 0;
+	padding: 0;
+	text-align: left;
+	font-size: 28px; /*don't use em*/
+	line-height: 32px;
+}
+h2 {
+	margin: 0;
+	padding: 30px 0 0 0;
+}
+h3 {
+	margin: 0 0 30px 0;
+	padding: 0;
+	text-align: left;
+	font-size: 18px;
+	line-height: 22px;
+}
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+header {
+	position: relative;
+	margin-bottom: 70px;
+	padding: 10px;
+	background: url(images/lighthouse-short.jpg) right top no-repeat;
+	box-shadow: 0 0 6px #444444;
+}
+header p {
+	margin: 0 20px 20px 20px;
+	padding: 0;
+}
+.project {
+	position: relative;
+	margin-bottom: 70px;
+	padding-top: 200px;
+}
+.project a {
+	color: inherit;
+	text-decoration: none;
+	text-shadow: inherit;
+	-webkit-transition: color 0.5s, text-shadow 0.5s;
+	transition: color 0.5s, text-shadow 0.5s;
+}
+.project p a, .project ul a {
+	color: #AEAEAE;
+}
+.project a:hover {
+	color: #DDDDDD;
+	text-shadow: 0 0 10px white;
+}
+.proj-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 400px;
+	width: 100%;
+	max-width: 1000px;
+	background-color: white;
+	box-shadow: 0 0 40px black inset;
+}
+.proj-image.vaci { background: url(images/vaci.png) 0 -90px no-repeat; }
+.proj-image.rhl { background: url(images/rhl.png) center top no-repeat; }
+.proj-image.git { background: url(images/va-git.png) left top no-repeat; }
+.description {
+	position: relative;
+	min-height: 164px; /*200-padding*/
+	width: 80%;
+	max-width: 1000px;
+	margin: 0;
+	padding: 30px 10% 6px 10%; /*adjust bottom by eye*/
+	background-color: rgba(0,0,0,0.7);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.7) 60px, rgba(0,0,0,1) 180px);
+	background: -o-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,0.7) 60px, rgba(0,0,0,1) 180px);	
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,0.7) 60px, rgba(0,0,0,1) 180px);
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7) 60px, rgba(0,0,0,1) 180px);
+}
+.description p {
+	margin: 10px 0;
+	padding: 0;
+}
+a.document-icon {
+	display: inline-block;
+	height: 22px; /*35-padding*/
+	width: 27px;
+	margin: 6px;
+	padding-top: 13px;
+	font-size: 11px; /*don't use em*/
+	background: url(images/document-icon.png) no-repeat;
+}
+a.arrow-icon {
+	display: inline-block;
+	height: 25px; /*35-padding*/
+	width: 30px; /*34-padding*/
+	margin: 6px;
+	padding: 10px 4px 0 0;
+	font-size: 11px;
+	vertical-align: 3px; /*difference in top padding between document and arrow*/
+	background: url(images/arrow-icon.png) no-repeat;
+}
+#logo-box {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	height: 120px;
+	width: 0;
+	padding: 5px;
+	text-align: right;
+	border: 2px solid rgba(255,255,255,0.7);
+	border-radius: 4px;
+	background-color: rgba(0,0,0,0.7);
+	overflow: hidden;
+	visibility: hidden;
+	-webkit-transition: height 0.5s, width 0.5s;
+	transition: height 0.5s, width 0.5s;
+}
+#logo-box a.close {
+	display: block;
+	float: right;
+	font-size: 10px;
+	line-height: 10px;
+}
+#logos {
+	clear: both;
+}
+#logos img {
+	float: left;
+	height: 100px;
+	width: 100px;
+	margin: 5px;
+}

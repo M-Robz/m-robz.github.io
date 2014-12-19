@@ -1,6 +1,69 @@
 <!DOCTYPE html>
+
 <html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Portfolio - Matthew G. Robinson</title>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
 <body>
-<p>Test page 2</p>
+
+<header>
+	<h1>Matthew G. Robinson</h1>
+	<h3>Web Development Portfolio</h3>
+	<p>I am a public policy professional who also enjoys building websites. I educated myself in web design and development on the job so I could maintain a site for the US Department of Veterans Affairs, and in the process discovered a new interest. While I don't have the pedigree of a professional web developer, I learn quickly and require relatively modest compensation for my services.</p>
+	<p>The following are three examples of my past work...</p>
+</header>
+<section class="project">
+	<div class="proj-image vaci"></div>
+	<div class="description">
+		<h2><a href="vaci-v3-1/index.html" target="_blank">VA Center for Innovation</a></h2>
+		<p>One of my many responsibilities during my four-and-a-half-year tenure at the Department of Veterans Affairs was to maintain the public website for my program, the Center for Innovation. In addition to regularly updating the content, I developed a number of enhancements to the site's design and functionality.</p>
+		<p>We went through three different builds while I was there, each of which was initially constructed by a third party. The current iteration was originally produced by <a href="http://www.ignition72.com" target="_blank">Ignition72</a> on contract, and the work featured here is a combination of their code and mine. Some of my contributions included:</p>
+		<ul>
+			<li><a href="vaci-v3-1/index.html" target="_blank">Redesigned home page</a></li>
+			<li><a href="vaci-v3-1/about.html?open=Robinson" target="_blank">Added support for hyperlinking to specific staff bios (this example links to mine)</a></li>
+			<li><a href="vaci-v3-0/innovation-profiles.html" target="_blank">Redesigned innovation profiles</a></li>
+			<li><a href="vaci-v3-0/blog/2013-12-19-newmark-bearing-witness.html" target="_blank">Created new blog with filterable menu</a></li>
+			<li><a href="vaci-v3-1/program-d2d.html" target="_blank">Designed resources page to emulate a folder tree</a></li>
+		</ul>
+		<a href="vaci-v3-0/css/dcg_styles.css" target="_blank" class="document-icon" title="View style sheet">CSS</a>
+		<a href="vaci-v3-0/js/dcg_script.js" target="_blank" class="document-icon" title="View javascript">JS</a>
+		<a href="http://www.innovation.va.gov" target="_blank" class="arrow-icon" title="Visit site">GO</a>
+	</div>
+</section>
+<section class="project">
+	<div class="proj-image git"></div>
+	<div class="description">
+		<h2><a href="va-github/index.html" target="_blank">VA GitHub Page</a></h2>
+		<p>As a side project while with the Center for Innovation, I designed and developed a GitHub landing page for the Department of Veterans Affairs. The page is a gateway to all of VA's open source repositories on GitHub. I followed some stylistic guidance pertaining to the layout and color scheme, but otherwise the design is mine.</p>
+		<a href="va-github/styles.css" target="_blank" class="document-icon" title="View style sheet">CSS</a>
+		<a href="http://usdeptveteransaffairs.github.io" target="_blank" class="arrow-icon" title="Visit site">GO</a>
+	</div>
+</section>
+<section class="project">
+	<div class="proj-image rhl"></div>
+	<div class="description">
+		<h2><a href="rhl/index.html" target="_blank">Private Fantasy Hockey Site</a></h2>
+		<p>I designed and developed a static website for my fantasy hockey league, which I continue to maintain. The site showcases a few of my ventures into graphic design. In addition to the header collage, I <a href="javascript:viewLogos();">designed logos</a> for several teams in my leagues.</p>
+		<div id="logo-box">
+			<a href="javascript:viewLogos();" class="close">CLOSE</a>
+			<div id="logos"><img src="rhl/images/bombers100x100.png"><img src="rhl/images/zambonis100x100.jpg"><img src="rhl/images/lnt_100.png"><img src="rhl/images/foggybottoms100x100.jpg"></div>
+		</div>
+		<a href="rhl/styles.css" target="_blank" class="document-icon" title="View style sheet">CSS</a>
+		<a href="rhl/script.js" target="_blank" class="document-icon" title="View javascript">JS</a>
+	</div>
+</section>
+
 </body>
+
 </html>
