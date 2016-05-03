@@ -79,8 +79,9 @@ header p {
 	box-shadow: 0 0 40px black inset;
 }
 .proj-image.vaci { background: url(images/vaci.png) 0 -90px no-repeat; }
-.proj-image.rhl { background: url(images/rhl.png) center top no-repeat; }
 .proj-image.git { background: url(images/va-git.png) left top no-repeat; }
+.proj-image.alooo { background: url(images/alooo.png) center top no-repeat; }
+.proj-image.rhl { background: url(images/rhl.png) center top no-repeat; }
 .description {
 	position: relative;
 	min-height: 164px; /*200-padding*/

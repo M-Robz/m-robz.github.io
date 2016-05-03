@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  background: url(images/comerica-park.jpg);
+  background-attachment: fixed;
+}
+#headerBGimg {
+  position: absolute;
+  top: 25px;
+  left: 225px;
+  height: 100px;
+  width: 654px;
+  background: url(images/at-bat.png) no-repeat;
+  opacity: 0.5;
+}
+#headerBGcolor {
+  position: absolute;
+  top: 20px;
+  height: 110px;
+  width: 100%;
+  min-width: 1130px; /* total min-width of pageContainer */
+  background: rgba(0, 59, 119, 0.5);
+}
+#pageContainer {
+  height: 100%;
+  width: auto;
+  min-width: 1090px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+header {
+  position: absolute;
+  top: 20px;
+  height: 110px;
+  width: 1079px; /* total leagueLogo width + total teamLogos width (1059) + extra so teamLogos fits in Android Chrome (20) */
+}
+#leagueLogo {
+  float: left;
+  height: 110px;
+  padding-right: 20px;
+}
+#leagueLogo img {
+  height: 96px;
+  width: 155px;
+  margin: 5px 0;
+  border: 2px solid rgba(0, 59, 119, 0.8);
+}
+#teamLogos {
+  float: left;
+  height: 60px;
+  width: 850px; /* total teamLogos img width * #logos (768) + extra for browser space between images (82) */
+  padding: 25px 15px;
+}
+#teamLogos img {
+  height: 50px;
+  width: 50px;
+  margin: 3px 5px;
+  border: 2px solid rgba(0, 59, 119, 0.8);
+}
+
+/* ---- NAVIGATION MENU ---- */
+nav {
+  float: left;
+  height: 100%;
+  width: 159px;
+  padding: 150px 10px 0 0;
+}
+.navItem {
+  position: relative;
+}
+.navItem a {
+  position: relative;
+  display: block;
+  height: 28px;
+  width: 155px;
+  margin-bottom: 10px;
+  padding-top: 9px;
+  z-index: 1;
+  text-decoration: none;
+  text-align: center;
+  color: #500019;
+  border: 2px solid rgba(80, 0, 25, 0.3);
+  background-color: rgba(170, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(68, 0, 0, 0.2) inset;
+}
+.navItem a:hover {
+  background-color: rgba(175, 125, 125, 0.9);
+  box-shadow: 0 0 10px rgba(123, 75, 75, 0.9) inset;
+}
+.subNav {
+  visibility: hidden;
+  position: absolute; /* has to be descended from navItem for absolute positioning */
+  left: 140px;
+  bottom: 8px;
+  width: auto;
+  padding: 4px;
+  z-index: 2;
+  border: 2px solid rgba(175, 125, 125, 0.7);
+  background-color: rgba(210, 200, 200, 0.8);
+}
+.subNav span {
+  display: block;
+  margin: 0 0 4px 0;
+  padding: 0 2px;
+  font-size: 12px;
+  color: #770000;
+  border-bottom: 1px solid rgba(175, 125, 125, 0.5);
+}
+.subNav a {
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0 0 4px 0;
+  padding: 0 0 0 4px;
+  z-index: 2;
+  text-decoration: none;
+  text-align: left;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+.subNav a:hover {
+  background-color: rgba(150, 125, 125, 0.5);
+  box-shadow: none;
+}
+
+/* ---- MAIN CONTENT AREA ---- */
+main {
+  display: block; /* prevents element from having no width in IE */
+  height: auto;
+  min-height: 500px;
+  width: auto;
+  margin-left: 179px;
+  overflow: visible;
+  padding: 150px 20px 20px 20px;
+  background-color: rgba(50, 50, 50, 0.1);
+}
+h1 {
+  margin: 0 0 26px 0;
+  padding-bottom: 8px;
+  font-size: 24px;
+  color: rgb(0, 41, 83);
+  border-bottom: 4px groove rgba(40, 40, 40, 0.2);
+}
+h2 {
+  margin-top: 26px;
+  font-size: 18px;
+}
+h3 {
+  margin-top: 26px;
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+}
+span.subtitle-top {
+  font-size: 60%;
+  line-height: 200%;
+}
+a {
+  color: rgb(0, 68, 136);
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  margin: 0;
+  padding: 2px;
+}
+table.noGrid {
+  width: 100%;
+  font-size: 12px;
+  text-align: left;
+  background: none;
+}
+table.noGrid tr {
+  border-bottom: 1px solid #757575;
+}
+table.noGrid tr.head {
+  font-weight: bold;
+  vertical-align: bottom;
+  border-bottom: 1px solid #111111;
+}
+table.noGrid td {
+  border: none;
+}
+table.withGrid {
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #ffffff;
+}
+table.withGrid tr.head {
+  font-weight: bold;
+  vertical-align: bottom;
+  background-color: #c0c0c0;
+}
+table.withGrid tr.subHead {
+  background-color: #e0e0e0;
+}
+table.withGrid td {
+  border: 1px solid #111111;
+}
+.imgCell {
+  width: 20px;
+}
+.imgCell img {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  border: none;
+}
+.insetBox {
+  padding: 10px;
+  background-color: rgba(75, 75, 75, 0.1);
+  box-shadow: 0 2px 6px 2px rgba(40, 40, 40, 0.1) inset;
+}
+
+/* ---- HOME PAGE ---- */
+.homePageBox {
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.homePageBox h1 {
+  margin: 0 0 4px 0;
+  padding: 2px 10px 0 10px;
+  font-size: 18px;
+  line-height: 24px;
+  border-bottom: 1px solid #7d7d7d;
+  box-shadow: 0 -2px 6px 2px rgba(40, 40, 40, 0.1) inset;
+}
+.rotoBox {
+  float: left;
+  max-width: 400px;
+  margin-right: 10px;
+}
+.rotoBox p {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 12px;
+  text-align: center;
+}
+.boxContent {
+  border-top: 1px solid #7d7d7d;
+}
+.boxContent td {
+  padding: 3px 5px;
+  vertical-align: top;
+  border: none;
+}
+
+/* ---- ROTO STANDINGS ---- */
+.roto, .rotoOld {
+	margin-top: 20px;
+	width: auto;
+}
+.rotoOld img { /* old styles for team logos */
+	float: left;
+	margin-right: 5px;
+	height: 20px;
+	width: 20px;
+	border: none;
+}
+.rotoStats {
+	display: none;
+}
+.rotoStats.visible {
+	display: block;
+}
+
+/* ---- RULES ---- */
+.rules table {
+  width: auto;
+  margin: 0 0 10px 5%;
+}
+.rules td {
+  padding: 2px 8px;
+}
+.explanation {
+  width: 90%;
+  margin: 0 5% 10px 5%;
+  padding: 10px;
+  font-size: 13px;
+  background-color: rgba(200, 210, 200, 0.4);
+  border: 1px solid rgb(140, 150, 140);
+}
+.explanation h4 {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+.explanation p {
+  margin: 0 0 5px 0;
+  padding: 0;
+}

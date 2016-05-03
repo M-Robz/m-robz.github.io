@@ -8,6 +8,6 @@ function viewLogos() {
 	}
 	else {
 		logoDiv.style.visibility = "visible";
-		logoDiv.style.width = "440px";
+		logoDiv.style.width = "660px";
 	}
 }
