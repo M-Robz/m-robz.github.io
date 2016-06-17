@@ -80,8 +80,7 @@ header p {
 }
 .proj-image.vaci { background: url(images/vaci.png) 0 -90px no-repeat; }
 .proj-image.git { background: url(images/va-git.png) left top no-repeat; }
-.proj-image.alooo { background: url(images/alooo.png) center top no-repeat; }
-.proj-image.rhl { background: url(images/rhl.png) center top no-repeat; }
+.proj-image.alooo { background: url(images/alooo-mobile.png) left top no-repeat; }
 .description {
 	position: relative;
 	min-height: 164px; /*200-padding*/
@@ -136,6 +135,9 @@ a.arrow-icon {
 	-moz-transition: height 0.5s, width 0.5s;
 	-o-transition: height 0.5s, width 0.5s;
 	transition: height 0.5s, width 0.5s;
+}
+#logo-box.hasWidth {
+	width: 550px; /* = total img width * #images */
 }
 #logo-box a.close {
 	display: block;

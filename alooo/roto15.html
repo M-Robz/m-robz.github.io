@@ -4,11 +4,27 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1">
 <title>ALOOO Roto Standings</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="head-nav.js"></script>
+
+<style>
+table.highlight-new td:nth-child(10),
+table.highlight-new td:nth-child(17),
+table.highlight-new td:nth-child(18),
+table.highlight-old td:nth-child(10),
+table.highlight-old td:nth-child(11),
+table.highlight-old td:nth-child(18),
+table.highlight-old td:nth-child(19),
+table.highlight-old td:nth-child(20),
+table.highlight-old td:nth-child(21) {
+  font-weight: bold;
+  background-color: #c0c0c0;
+}
+</style>
 
 </head>
 
@@ -18,7 +34,7 @@
 <div id="headerBGcolor"></div>
 
 <!-- Begin Page Container -->
-<div id="pageContainer">
+<div id="pageContainer" onclick="void(0)"> <!-- dummy onclick permits event delegation in Safari Mobile 7.0+ -->
 
 <!-- Begin Header and Navigation -->
 <script>writeHeadNav();</script>
@@ -33,7 +49,7 @@
 
 <p class="insetBox">Week 21 | <a href="javascript:switchTab('wk18');">Week 18</a> | <a href="javascript:switchTab('wk15');">Week 15</a> | <a href="javascript:switchTab('wk11');">Week 11</a></p>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x highlight-new">
   <tr class="head">
     <td colspan="3">New Format (Final Standings)</td>
     <td>R</td>
@@ -335,7 +351,7 @@
   </tr>
 </table>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x highlight-old">
   <tr class="head">
     <td colspan="3">Standard Format (Final Standings)</td>
     <td>R</td>
@@ -693,7 +709,7 @@
   </tr>
 </table>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x">
   <tr class="head">
     <td colspan="2" rowspan="2" valign="middle">Averages per Week*</td>
     <td colspan="12">Season</td>
@@ -1096,7 +1112,7 @@
 
 <p class="insetBox"><a href="javascript:switchTab('wk21');">Week 21</a> | Week 18 | <a href="javascript:switchTab('wk15');">Week 15</a> | <a href="javascript:switchTab('wk11');">Week 11</a></p>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x highlight-new">
   <tr class="head">
     <td colspan="3">New Format (thru Week 18)</td>
     <td>R</td>
@@ -1396,7 +1412,7 @@
   </tr>
 </table>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x highlight-old">
   <tr class="head">
     <td colspan="3">Standard Format (thru Week 18)</td>
     <td>R</td>
@@ -1748,7 +1764,7 @@
   </tr>
 </table>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x">
   <tr class="head">
     <td colspan="2" rowspan="2" valign="middle">Averages per Week*</td>
     <td colspan="12">Season</td>
@@ -2151,7 +2167,7 @@
 
 <p class="insetBox"><a href="javascript:switchTab('wk21');">Week 21</a> | <a href="javascript:switchTab('wk18');">Week 18</a> | Week 15 | <a href="javascript:switchTab('wk11');">Week 11</a></p>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x highlight-new">
   <tr class="head">
     <td colspan="3">New Format (thru Week 15)</td>
     <td>R</td>
@@ -2425,7 +2441,7 @@
   </tr>
 </table>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x highlight-old">
   <tr class="head">
     <td colspan="3">Standard Format (thru Week 15)</td>
     <td>R</td>
@@ -2777,7 +2793,7 @@
   </tr>
 </table>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x">
   <tr class="head">
     <td rowspan="2" colspan="2" valign="middle">Averages per Week*</td>
 	<td colspan="12">Season</td>
@@ -3180,7 +3196,7 @@
 
 <p class="insetBox"><a href="javascript:switchTab('wk21');">Week 21</a> | <a href="javascript:switchTab('wk18');">Week 18</a> | <a href="javascript:switchTab('wk15');">Week 15</a> | Week 11</p>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x highlight-old">
   <tr class="head">
     <td colspan="3">Standard Format (thru Week 11)</td>
     <td>R</td>
@@ -3506,7 +3522,7 @@
   </tr>
 </table>
 
-<table class="withGrid roto">
+<table class="withGrid roto scroll-x">
   <tr class="head">
     <td colspan="2">Averages per Week</td>
     <td>R</td>

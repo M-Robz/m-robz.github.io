@@ -4,6 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1">
 <title>ALOOO Home</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -18,7 +19,7 @@
 <div id="headerBGcolor"></div>
 
 <!-- Begin Page Container -->
-<div id="pageContainer">
+<div id="pageContainer" onclick="void(0)"> <!-- dummy onclick permits event delegation in Safari Mobile 7.0+ -->
 
 <!-- Begin Header and Navigation -->
 <script>writeHeadNav();</script>
